@@ -1,0 +1,129 @@
+body{
+	margin:0px;
+	padding:0px;
+    background: url('Images/s2.jpeg') no-repeat;
+    background-size: cover;
+    height:100%;
+    background-position: top;
+	font-size:20px;
+	font-family: poppins;
+    color: white;
+    text-align: center;
+}
+/* Navigation Bar */
+.navbar{
+    padding: 15px 65px;
+}
+ul{
+    margin:0px;
+    padding: 0px;
+	list-style:none;
+}
+ul li{
+	float:left;
+	width:170px;
+	height:40px;
+    line-height: 40px;
+}
+ul li a{
+	display:block;
+    color: white;
+	width:170px;
+	height:40px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color:#ffffff;
+	text-decoration:none;
+    color: #000000;
+    transform: scale(1.1,1.1);
+}
+.hidden{
+    display: none ;
+}
+/*Navigation part*/
+
+
+#toggle:checked + .responsive{
+    transition: 0.2s ease;
+}
+#toggle:checked + .navbtn{
+    transform: rotate(45deg);
+}
+#toggle:checked + .navbtn i{
+    background: black;
+    transition: all 0.2s ease;
+}
+#toggle:checked + .navbtn i:nth-child(1){
+    transform: translateY(6.7px) rotate(0deg);
+}
+#toggle:checked + .navbtn i:nth-child(2){
+    opacity: 0;
+}
+#toggle:checked + .navbtn i:nth-child(3){
+    transform: translateY(-6.7px)rotate(90deg);
+}
+#toggle:checked ~ .responsive{
+    opacity: 1;
+    z-index: 1;
+}
+#toggle:checked ~ .responsive ul li a{
+    opacity: 1;
+    transform: translateX(0px);
+}
+#toggle:checked ~ .navbtn{
+    opacity: 1;
+    z-index: 2;
+}
+#toggle:checked ~ .head{
+    display: none;
+}
+/*Navigation Bar*/
+/*Logo*/
+.logo h1{
+    position: relative;
+    color: deepskyblue;
+    font-size: 70px;
+    font-family: ubuntu;
+    margin-bottom: 0;
+}
+.logo p{
+    margin-top: 0px;
+    color: aliceblue;
+    text-align: center;
+}
+}
+.logo{
+    cursor: default;
+}
+.logo img{
+    width: 25%;
+    height: 60%;
+    margin: 25px auto;
+    display: block;
+}
+.head{
+    margin-top:20px;
+}
+/*Logo*/
+/*countdown*/
+.countdown{
+    margin-bottom: 20px;
+}
+.countdown h2{
+    padding-bottom: 15px;
+}
+.countdown a{
+    background-color: cyan;
+    color: black;
+    margin-top: 25px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.countdown a:hover{
+    text-decoration: none;
+    background-color: cornflowerblue;
+}
+/*countdown*/

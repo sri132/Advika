@@ -1,0 +1,132 @@
+/*Responsiveness*/
+@media screen and (max-width: 638px){
+    body{
+        color: white;
+        width: 100%;
+        height: 110vh;
+    }
+    .responsive{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+        background: white;
+        opacity: 0;
+        transition: all 0.2s ease;
+        z-index: -1;
+    }
+    .responsive ul{
+        left: 50%;
+        position: absolute;
+        top: 45%;
+        width: 100%;
+    }
+    .responsive ul li{
+        display: block;
+        text-align: right;
+        float: none;
+    }
+    .responsive ul li a:hover{
+        color: black;
+        background: none;
+        opacity: 1;
+    }
+    .responsive ul li a{
+        color: black;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+    }
+    
+    .responsive ul li:nth-child(1) a{
+        transition-delay: 0.2s;
+    }
+    .responsive ul li:nth-child(2) a{
+        transition-delay: 0.25s;
+    }
+    .responsive ul li:nth-child(3) a{
+        transition-delay: 0.3s;
+    }
+    .responsive ul li:nth-child(4) a{
+        transition-delay: 0.35s;
+    }
+    .responsive ul li:nth-child(5) a{
+        transition-delay: 0.4s;
+    }
+    .responsive ul li:nth-child(6) a{
+        transition-delay: 0.45s;
+    }
+    .responsive ul li:nth-child(7) a{
+        transition-delay: 0.5s;
+    }
+    .responsive ul li:nth-child(8) a{
+        transition-delay: 0.55s;
+    }
+    input.hidden{
+        cursor: pointer;
+        position: fixed;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-left: 69.6%;
+        margin-top: 2.2%;
+        z-index: 1;
+        opacity: 0;
+    }
+    .navbtn{
+        cursor: pointer;
+        position: fixed;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-left: 70%;
+        margin-top: 2.8%;
+    }
+    .navbtn i{
+        display: block;
+        width: 27px;
+        height: 3px;
+        background-color: black;
+        margin-left: 5px;
+        border-radius: 6px;
+    }
+    .navbtn i:nth-child(1){
+        margin-top: 11px;
+    }
+    .navbtn i:nth-child(2){
+        margin-top: 4px;
+    }
+    .navbtn i:nth-child(3){
+        margin-top: 4px;
+    }
+    /*Logo*/
+    .logo h1{
+        height: 32px;
+        padding-left: 12%;
+        text-align: left;
+        font-size: 26px;
+        font-weight: 600;
+        font-family: 'Ubuntu',sans-serif;
+    }
+    .logo p{
+        height: 18px;
+        padding-left: 13%;
+        text-align: left;
+        font-size: 12px;
+        font-weight: 500;
+        color: black;
+    }
+    .logo img{
+        min-width: 300px;
+        min-height: 300px;
+        margin: 19% auto 44%;
+        display: block;
+    }
+    .head{
+        position: fixed;
+        width: 70%;
+        top: 0;
+        margin-top: 20px;
+    }
+    /*Logo*/
+}
